@@ -1,0 +1,53 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "firstName": "Иван",
+        "secondName": "Иванов",
+        "carNumber": "A123BC",
+        "parkingLot": "5"
+      },
+      {
+        "id": 2,
+        "firstName": "Мария",
+        "secondName": "Петрова",
+        "carNumber": "E789HH",
+        "parkingLot": "6"
+      },
+      {
+        "id": 3,
+        "firstName": "Анна",
+        "secondName": "Панова",
+        "carNumber": "O329TH",
+        "parkingLot": "7"
+      },
+      {
+        "id": 4,
+        "firstName": "Данил",
+        "secondName": "Леонов",
+        "carNumber": "E789HH",
+        "parkingLot": "9"
+      },
+      {
+        "id": 5,
+        "firstName": "Сергей",
+        "secondName": "Перов",
+        "carNumber": "A324PT",
+        "parkingLot": "21"
+      },
+      {
+        "id": 6,
+        "firstName": "Алексей",
+        "secondName": "Виннер",
+        "carNumber": "A139AA",
+        "parkingLot": "20"
+      },
+      {
+        "id": 7,
+        "firstName": "Александр",
+        "secondName": "Буйневич",
+        "carNumber": "O987OO",
+        "parkingLot": "19"
+      }
+    ]
+  }
