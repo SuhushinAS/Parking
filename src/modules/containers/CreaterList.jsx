@@ -7,6 +7,9 @@ const CreaterList = (props) => {
 
   useEffect(() => {
     const fetchData = async () => {
+      // TODO Привести формат АПИ на фронте и бэке к одному виду
+      // TODO Вынести Загрузку JSON в отдельный хук
+      // TODO Вынести загрузку каждой сущности в отдельный хук
       const responceUsers = await fetch('/api/users')
       const responceSpaces = await fetch('/api/spaces')
 
@@ -15,8 +18,10 @@ const CreaterList = (props) => {
 
       // console.log(dataUsers.users, dataSpaces.data)
       const placesList = createDataList(dataUsers.users, dataSpaces.data)
+      // TODO Вызывает бесконечную загрузку данных
       setPlace(placesList)
     }
+    // TODO для чего создаётся  и сразу вызывается функция?
     fetchData()
   }, [places])
 
@@ -24,6 +29,7 @@ const CreaterList = (props) => {
     const array = []
     const listUsersReversed = listUsers.reverse()
     for (let item of listSpaces) {
+      // TODO Определить Map статусов
       if (item.status === 1) {
         array.push(statusOne(item.id, listUsersReversed))
       }
@@ -37,6 +43,7 @@ const CreaterList = (props) => {
   }
 
   const statusOne = (id, users) => {
+    // TODO Сделать userMap, чтобы не делать цикл в цикле
     for (let user of users) {
       if (id === Number(user.parkingLot)) {
         return {
